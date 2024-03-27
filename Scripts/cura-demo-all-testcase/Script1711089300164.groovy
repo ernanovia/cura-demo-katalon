@@ -24,16 +24,16 @@ WebUI.openBrowser(GlobalVariable.base_url)
 WebUI.delay(2)
 
 // login failed 
-WebUI.click(findTestObject('Object Repository/loginPage/appoinmentBtn'))
-WebUI.setText(findTestObject('Object Repository/loginPage/usernameField'), userNotExsist)
-WebUI.setText(findTestObject('Object Repository/loginPage/passwordField'), passwordWrong)
-WebUI.click(findTestObject('Object Repository/loginPage/loginBtn'))
-WebUI.verifyTextPresent("Make Appointment", true)
+CustomKeywords.'customKeyword.loginUser'(userNotExsist, userNotExsist)
+WebUI.delay(2)
+WebUI.verifyTextPresent("Login failed! Please ensure the username and password are valid.", true)
+
 
 // login success
-WebUI.click(findTestObject('Object Repository/loginPage/appoinmentBtn'))
-WebUI.setText(findTestObject('Object Repository/loginPage/usernameField'), userValid)
-WebUI.setText(findTestObject('Object Repository/loginPage/passwordField'), passwordValid)
-WebUI.click(findTestObject('Object Repository/loginPage/loginBtn'))
-WebUI.verifyTextPresent("Login failed! Please ensure the username and password are valid.", true)
+CustomKeywords.'customKeyword.loginUser'(userValid, passwordValid)
+WebUI.delay(2)
+WebUI.verifyTextPresent("Make Appointment", true)
+
+// close browser
+WebUI.closeBrowser()
 

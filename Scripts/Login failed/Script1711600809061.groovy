@@ -15,24 +15,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-userValid = "John Doe"
-passwordValid = "ThisIsNotAPassword"
-userNotExsist = "XX"
-passwordWrong = "wrongPassword"
-
+//userValid = "John Doe"
+//passwordValid = "ThisIsNotAPassword"
+//userNotExsist = "XX"
+//passwordWrong = "wrongPassword"
 WebUI.openBrowser(GlobalVariable.base_url)
+
 WebUI.delay(2)
 
-// login failed 
+//login failed 
 CustomKeywords.'customKeyword.loginUser'(userNotExsist, userNotExsist)
-WebUI.delay(2)
-WebUI.verifyTextPresent("Login failed! Please ensure the username and password are valid.", true)
 
-
-// login success
-CustomKeywords.'customKeyword.loginUser'(userValid, passwordValid)
 WebUI.delay(2)
-WebUI.verifyTextPresent("Make Appointment", true)
+
+WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', true)
+
+WebUI.delay(2)
 
 // close browser
 WebUI.closeBrowser()

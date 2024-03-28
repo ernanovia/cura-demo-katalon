@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login failed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4d4dd95-8d69-48a4-805b-8b3f7b23959f</testCaseGuid>
+   <variable>
+      <defaultValue>'John Doe'</defaultValue>
+      <description></description>
+      <id>7ee5c0a5-9b17-47ab-9cb7-d652eb892b78</id>
+      <masked>false</masked>
+      <name>userValid</name>
+   </variable>
+   <variable>
+      <defaultValue>'ThisIsNotAPassword'</defaultValue>
+      <description></description>
+      <id>2e820994-bc90-4749-9076-3dcc54460a5f</id>
+      <masked>false</masked>
+      <name>passwordValid</name>
+   </variable>
+   <variable>
+      <defaultValue>'XX'</defaultValue>
+      <description></description>
+      <id>b4a6f215-97fa-475a-ae95-8bf7fe8859be</id>
+      <masked>false</masked>
+      <name>userNotExsist</name>
+   </variable>
+   <variable>
+      <defaultValue>'wrongPassword'</defaultValue>
+      <description></description>
+      <id>9d001704-3163-461d-8012-e35b07e98cd0</id>
+      <masked>false</masked>
+      <name>passwordWrong</name>
+   </variable>
+</TestCaseEntity>

@@ -23,15 +23,16 @@ WebUI.openBrowser(GlobalVariable.base_url)
 
 WebUI.delay(2)
 
-//login failed 
-CustomKeywords.'customKeyword.loginUser'(userNotExsist, userNotExsist)
+//Logika perulangan
+//1. reach website
+//2. klik menu toggle
+//3. input username,pass
+//4. redirect, VerifyError state, lalu logout
+//loop step 2-4
+// login success
+CustomKeywords.'customKeyword.loginUser'(usernameLogin, passwordLogin)
 
 WebUI.delay(2)
 
-//WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', true)
-//
-//WebUI.delay(2)
-
-// close browser
 WebUI.closeBrowser()
 

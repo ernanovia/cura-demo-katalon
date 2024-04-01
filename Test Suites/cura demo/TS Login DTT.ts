@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS Login</name>
+   <name>TS Login DTT</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,15 +9,15 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>f2914581-450b-4e76-8d22-358689549613</testSuiteGuid>
+   <testSuiteGuid>50de5132-257d-4801-b142-6e7348837596</testSuiteGuid>
    <testCaseLink>
-      <guid>283d6e1e-f058-417a-978b-b6a66b19b656</guid>
+      <guid>c8685a07-174c-4039-84b2-816740c9aece</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login Positive Flow-Single</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>66e8911d-7ef3-4780-b0cf-ed4b6a88b576</id>
+         <id>51ff94c3-5e36-4837-b6c8-c0b318d4e3ed</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -25,15 +25,15 @@
          <testDataId>Data Files/TestData/LoginData</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>51ff94c3-5e36-4837-b6c8-c0b318d4e3ed</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
          <variableId>747471ea-ef2a-46ce-808f-c69ca2c9cc04</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>51ff94c3-5e36-4837-b6c8-c0b318d4e3ed</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>36787784-94ec-42f6-858e-dd7808880764</variableId>
       </variableLink>
    </testCaseLink>

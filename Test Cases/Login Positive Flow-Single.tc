@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login Positive Flow-Single</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0028c291-bec4-4b24-bddb-3d1ab9d2065f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>747471ea-ef2a-46ce-808f-c69ca2c9cc04</id>
+      <masked>false</masked>
+      <name>usernameLogin</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>36787784-94ec-42f6-858e-dd7808880764</id>
+      <masked>false</masked>
+      <name>passwordLogin</name>
+   </variable>
+</TestCaseEntity>

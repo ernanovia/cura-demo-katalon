@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import javax.sound.sampled.SourceDataLine
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -19,19 +22,26 @@ import internal.GlobalVariable as GlobalVariable
 //passwordValid = "ThisIsNotAPassword"
 //userNotExsist = "XX"
 //passwordWrong = "wrongPassword"
+
+WebUI.delay(2)
+def sourceData = findTestData("TestData/LoginData")
+
+for (def rowNumber = 1; rowNumber <= sourceData.getRowNumbers(); rowNumber++) {
+println('Count iteration : ' + rowNumber)
+def usernameLogin = sourceData.getValue(1, rowNumber)
+def passwordLogin = sourceData.getValue(2, rowNumber)
+
+//println('username: ' + usernameLogin)
+//println('password: ' + passwordLogin)
 WebUI.openBrowser(GlobalVariable.base_url)
 
-WebUI.delay(2)
-
-//login failed 
-CustomKeywords.'customKeyword.loginUser'(userNotExsist, userNotExsist)
+CustomKeywords.'customKeyword.loginUser'(usernameLogin, passwordLogin)
 
 WebUI.delay(2)
 
-//WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', true)
-//
-//WebUI.delay(2)
-
-// close browser
 WebUI.closeBrowser()
+
+}
+
+
 

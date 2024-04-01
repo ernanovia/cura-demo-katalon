@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login Positive Flow-DTT</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ace8c728-021b-4da6-ba24-dd46edee5882</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>67066ae4-010c-4a50-8403-229b8fbaa876</id>
+      <masked>false</masked>
+      <name>usernameLogin</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>75848502-8b22-4206-98e1-921fb07fede1</id>
+      <masked>false</masked>
+      <name>passwordLogin</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Appointment Positive Flow-Single</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94782e38-1c33-4930-82d6-1a6923d9a937</testCaseGuid>
+   <variable>
+      <defaultValue>'Hongkong CURA Healthcare Center'</defaultValue>
+      <description></description>
+      <id>2e4dec7d-9d6e-4945-96ec-ef03777da4d7</id>
+      <masked>false</masked>
+      <name>facility</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>70948070-95b1-41ea-81c3-986c7ecd6c75</id>
+      <masked>false</masked>
+      <name>hospital_readmission</name>
+   </variable>
+   <variable>
+      <defaultValue>'None'</defaultValue>
+      <description></description>
+      <id>ed89ed40-3883-44ef-ab5d-4bee23864c29</id>
+      <masked>false</masked>
+      <name>healthcare_program</name>
+   </variable>
+   <variable>
+      <defaultValue>'03/04/2024'</defaultValue>
+      <description></description>
+      <id>f9a51d0c-d71e-471b-929b-35a3b8e44f39</id>
+      <masked>false</masked>
+      <name>visit_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is my comment'</defaultValue>
+      <description></description>
+      <id>77ea0e99-f767-4a43-be8e-a0dd0fdbc1d6</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

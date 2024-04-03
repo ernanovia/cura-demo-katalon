@@ -14,7 +14,7 @@
       <guid>283d6e1e-f058-417a-978b-b6a66b19b656</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login Positive Flow-Single</testCaseId>
+      <testCaseId>Test Cases/Logins/Login Positive Flow-Single</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>66e8911d-7ef3-4780-b0cf-ed4b6a88b576</id>

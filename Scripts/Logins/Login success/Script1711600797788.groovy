@@ -30,6 +30,4 @@ WebUI.delay(2)
 
 WebUI.verifyTextPresent('Make Appointment', true)
 
-// close browser
-WebUI.closeBrowser()
 
